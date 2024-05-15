@@ -24,7 +24,8 @@ export default class ProductInformation extends LightningElement {
         noProductsMessage,
         tableHeader
     };
-
+    
+    // apex call to get product info 
     @wire(fetchProductInformation, { caseRecordId: '$recordId' })
     wiredRecs(value) {
 
